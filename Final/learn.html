@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Object Manipulation</title>
+        <meta name="description" content="The Art of Object Manipulation">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <header>
+		
+		</header>
+			<nav data-0="position:absolute;top:440px;" data-800="position:absolute;top:800px;" data-1500="position:absolute;top:1550px;">
+			<ul>
+				<li><a href="main.html">About</a></li>
+				<li><a href="firepoi.html">Fire Poi</a></li>
+				<li><a href="hooping.html">Hooping</a></li>
+				<li><a href="contactjuggling.html">Contact Juggling</a></li>
+				<li><a href="staffs.html">Staffs</a></li>
+				<li><a href="learn.html">How to Learn</a></li>
+		</ul>
+		</nav>
+		<article>
+		<section id="learn">
+			<h3> How to Learn </h3>
+				<p> There are many resources available on the Internet to help you get started! Here are just a few:</p>
+					<ul class="links">
+						<li><a href="http://www.homeofpoi.com/lessons_all/teach/">Lessons on all types of Object Manipulation</li>
+						<li><a href="http://www.hooping.org/tag/hooping-lessons/">Great Hooping Tutorials</li>
+						<li><a href="http://juggling-for-beginners.com/contact-juggling/">Contact Juggling for Beginners</li>
+						<li><a href="http://www.flowtoys.com/product.php?productid=166">Dancing with the Fire Staff</li>
+						<li><a href="http://www.playpoi.com/">Fire and LED Poi Tutorials</li>
+						<li><a href="http://www.tamingfire.com/tutorials.html">Intermediate to Advanced Tutorials</li>
+					</ul>
+					
+			</section>
+		</article>	
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/skrollr.min.js"></script>
+		<script src="js/vendor/skrollr.menu.min.js"></script>
+		<script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+		<script type="text/javascript">
+		if($(window).width() > 600) {
+			var s = skrollr.init();
+			skrollr.menu.init(s, {
+				//skrollr will smoothly animate to the new position using `animateTo`.
+				animate: true,
+
+				//The easing function to use.
+				easing: 'sqrt',
+			
+				//How long the animation should take in ms.
+				duration: function(currentTop, targetTop) {
+					//By default, the duration is hardcoded at 500ms.
+					return 500;
+			
+					//But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+					//return Math.abs(currentTop - targetTop) * 10;
+				},
+			
+				//If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
+				//You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
+				//handleLink: function(link) {
+				//  return 400;//Hardcoding 400 doesn't make much sense.
+				//}
+			});
+			}
+		</script>	
+			
+		</body>
+	</html>

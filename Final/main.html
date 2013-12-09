@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Object Manipulation</title>
+        <meta name="description" content="The Art of Object Manipulation">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <header>
+			
+		</header>
+		
+		<nav data-0="position:absolute;top:440px;" data-800="position:absolute;top:800px;" data-1500="position:absolute;top:1550px;">
+			<ul>
+				<li><a href="main.html">About</a></li>
+				<li><a href="firepoi.html">Fire Poi</a></li>
+				<li><a href="hooping.html">Hooping</a></li>
+				<li><a href="contactjuggling.html">Contact Juggling</a></li>
+				<li><a href="staffs.html">Staffs</a></li>
+				<li><a href="learn.html">How to Learn</a></li>
+		</ul>
+		</nav>
+		<article>
+			<section id="about">
+				<h3>About Object Manipulation</h3>
+					<p>Object manipulation is a form of dexterity play or performance in which one or more people physically interact with one or more objects. Object manipulation skills are often recognized as circus skills.</p>
+					<p>Many forms of object manipulation have developed from various traditional and cultural skills. </p>
+					<p>There are a very wide range of types of object manipulation, including <a href="https://www.youtube.com/watch?v=ocT7vElJyiA">poi spinning</a>, juggling, <a href="https://www.youtube.com/watch?v=kJeGxTUgDLk">contact juggling</a>, <a href="https://www.youtube.com/watch?v=EeYTsR3kO6Q">hula hooping</a>, spinning staffs, and many others.<p>
+					<p>This site gives a brief introduction, with associated images, into a few popular forms of object manipulation.</p>
+				
+			
+			</section>
+		</article>
+		
+		
+		<!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+      
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/skrollr.min.js"></script>
+		<script src="js/vendor/skrollr.menu.min.js"></script>
+		<script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+		
+		<script type="text/javascript">
+		if($(window).width() > 600) {
+			var s = skrollr.init();
+			
+			skrollr.menu.init(s, {
+				//skrollr will smoothly animate to the new position using `animateTo`.
+				animate: true,
+
+				//The easing function to use.
+				easing: 'sqrt',
+			
+				//How long the animation should take in ms.
+				duration: function(currentTop, targetTop) {
+					//By default, the duration is hardcoded at 500ms.
+					return 500;
+			
+					//But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+					//return Math.abs(currentTop - targetTop) * 10;
+				},
+			
+				//If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
+				//You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
+				//handleLink: function(link) {
+				//  return 400;//Hardcoding 400 doesn't make much sense.
+				//}
+			});
+			}
+			
+			
+			
+		</script>
+    </body>
+</html>
